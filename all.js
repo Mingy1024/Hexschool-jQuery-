@@ -1,4 +1,22 @@
 $(document).ready(function () {
+    // swiper
+    const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        speed:1000,
+        loop: true,
+        autoplay: {
+          delay:2000
+        },
+      
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      
+      });
+
     //下拉式選單
     $(".menu-link1").click(function (e) { 
         e.preventDefault();
