@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML 最終作業</title>
+  <title>jQuery 最終作業</title>
 
   <link rel="shortcut icon" href="./images/favicon.ico">
   <meta name='description' content='HTML 最終作業' />
@@ -20,6 +20,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <link rel="stylesheet" href="style.css">
   
 </head>
@@ -89,17 +90,20 @@
     <div class="intro">
       <ul class="course-list">
         <li class="course-item">
-          <img src="./images/html5.png" alt="Html5圖示">
+          <a href="images/html5.png" data-lightbox="course" data-title="HTML" class="card-img"><img src="images/html5.png" alt="Html5圖示"></a>
           <h3>Html5 基礎教學</h3>
           <P>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</P>
         </li>
         <li class="course-item">
-          <div class="box"><img src="./images/Responisve.png" alt="響應式網站圖示"></div>
+          <div class="box">
+            <a href="images/Responisve.png" data-lightbox="course" data-title="RWD" class="card-img"><img src="images/Responisve.png" alt="響應式網站圖示"></a>
+          </div>
           <h3>響應式網站設計</h3>
           <P>響 應 式 網 站 設 計(Responisve web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。</P>
         </li>
         <li class="course-item">
-          <div class="box"><img src="./images/jQuery.png" alt="jQuery圖示"></div>
+          <div class="box">
+            <a href="images/jQuery.png" data-lightbox="course" data-title="jQuery" class="card-img"><img src="images/jQuery.png" alt="jQuery圖示"></a></div>
           <h3>jQuery實戰教學</h3>
           <p>
             本課程有以下特色
@@ -202,6 +206,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script src="all.js"></script>
 </body>
 
